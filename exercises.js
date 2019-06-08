@@ -17,6 +17,8 @@
 return combineStr;
  }
 
+ firstReverse('cat');
+
  /** Function: alphaOrder
  * The function will take the str parameter being passed in and
  * return the string in alphabetical order
@@ -24,6 +26,14 @@ return combineStr;
  * @return {string} in alphabetical order
  * ie: "cake" => "acek"
  */
+
+// function alphaOrder(str){
+//     if (typeof str !== 'string'){
+//         return null;
+//     }else{
+
+//     }
+// }
 
  /** Function: vowelCount
  * The function will take the num parameter being passed in and
