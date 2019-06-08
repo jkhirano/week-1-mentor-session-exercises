@@ -6,60 +6,67 @@
  * ie: "cat" => "tac"
  */
 
- function firstReverse(str){
-     if (typeof str !== 'string'){
-         return null;
-     }else{
-    var splitStr = str.split('');
-    var reverseStr = splitStr.reverse();
-    var combineStr = reverseStr.join('');
+function firstReverse(str) {
+    if (typeof str !== 'string') {
+        return null;
+    } else {
+        var splitStr = str.split('');
+        var reverseStr = splitStr.reverse();
+        var combineStr = reverseStr.join('');
+    }
+    return combineStr;
 }
-return combineStr;
- }
 
- firstReverse('cat');
+firstReverse('cat');
 
- /** Function: alphaOrder
- * The function will take the str parameter being passed in and
- * return the string in alphabetical order
- * @param {string} str
- * @return {string} in alphabetical order
- * ie: "cake" => "acek"
- */
+/** Function: alphaOrder
+* The function will take the str parameter being passed in and
+* return the string in alphabetical order
+* @param {string} str
+* @return {string} in alphabetical order
+* ie: "cake" => "acek"
+*/
 
-// function alphaOrder(str){
-//     if (typeof str !== 'string'){
-//         return null;
-//     }else{
+var alphaArray = ['c', 'a', 'k', 'e'];
 
-//     }
-// }
+function alphaOrder(str) {
+    if (typeof str !== 'string') {
+        return null;
+    } else {
+        var splitStr = str.split('');
+        var sortStr = splitStr.sort();
+        var joinStr = sortStr.join('');
+    }
+    return joinStr;
+}
 
- /** Function: vowelCount
- * The function will take the num parameter being passed in and
- * return the number of vowels in the string
- * @param {string} num
- * @return {number} count of vowels
- * ie: "oreo" => 3
- */
+alphaOrder(alphaArray);
 
- /** Function: timeConvert
- * The function will take the str parameter representing the amount of minutes being passed in and
- * return the number of hours and minutes. Seperate the number of hours
- * and minutes with a colon
- * @param {number} num
- * @return {string} as hours:minutes
- * ie: 68 => 1:8
- */
+/** Function: vowelCount
+* The function will take the num parameter being passed in and
+* return the number of vowels in the string
+* @param {string} num
+* @return {number} count of vowels
+* ie: "oreo" => 3
+*/
 
- /** Function: repeatString
- * The function will take in two parameters and repeat a given string (first argument)
- * num times (second argument). Return an empty string if num is a negative number
- * @param {string} str
- * @param {num} times
- * @return {string} repeated num times
- * i.e repeatString("money", 3) => "moneymoneymoney".
- */
+/** Function: timeConvert
+* The function will take the str parameter representing the amount of minutes being passed in and
+* return the number of hours and minutes. Seperate the number of hours
+* and minutes with a colon
+* @param {number} num
+* @return {string} as hours:minutes
+* ie: 68 => 1:8
+*/
+
+/** Function: repeatString
+* The function will take in two parameters and repeat a given string (first argument)
+* num times (second argument). Return an empty string if num is a negative number
+* @param {string} str
+* @param {num} times
+* @return {string} repeated num times
+* i.e repeatString("money", 3) => "moneymoneymoney".
+*/
 
 
 /**
@@ -78,7 +85,7 @@ return combineStr;
 
 module.exports = {
     firstReverse: firstReverse,
-    alphaOrder: null,
+    alphaOrder: alphaOrder,
     vowelCount: null,
     timeConvert: null,
     repeatString: null
